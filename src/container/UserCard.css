@@ -4,22 +4,24 @@
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-color: #fff;
 }
 .card__component{
     height: 80vh;
     width: 30vw;
     background-color: #EFEFF2;
+    border-radius: 12px;
     
 }
 .picture__box{
     background-color: #fff;
     height: 50%;
     width: 100%;
+    
 }
 img{
     width:100%;
-    height: 100%
+    height: 100%;
+    border-radius: 12px 12px 0 0 ;
 }
 button{
     height: 3rem;
@@ -37,5 +39,41 @@ button{
 }
 .userProfile{
     margin-left: 1rem;
-    
+}
+
+@media screen and (max-width: 770px) {
+    .card__component{
+        height: 85vh;
+        width: 90vw;
+        background-color: #EFEFF2;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card__component{
+        height: 100vh;
+        width: 100vw;
+        background-color: #EFEFF2;
+        border-radius: 0;
+        font-size: 16px;
+        
+    }
+    button{
+        
+        font-size: 18px;
+        font-family: sans-serif;
+        font-weight: 600;
+        background-color: #1D5EF5;
+        border: none;
+        color: #fff;
+        border-radius: 12px;
+        
+    }
+    img{
+        border-radius: 0;
+    }
+    .userProfile{
+        margin-left: .5rem;
+        margin-bottom: 1rem;
+    }
 }
